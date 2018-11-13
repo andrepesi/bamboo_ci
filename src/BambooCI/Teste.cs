@@ -4,5 +4,10 @@ namespace BambooCI
 {
     public class Class1
     {
+        public Class1()
+        {
+            Console.Write("Deploy 1");
+
+        }
     }
 }
