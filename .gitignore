@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/node_modules
+/src/BambooCI/.vs/BambooCI
+/src/BambooCI/bin/release/netstandard2.0
+/src/BambooCI/obj
+/.vs
+/src/BambooCI/packages

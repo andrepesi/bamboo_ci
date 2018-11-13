@@ -1,0 +1,9 @@
+{
+    "refname": "v1.0.0",
+    "autoVersion": 1,
+    "buildMode": "release",
+    "includeMetaInVersion": true,    
+    "nugetApiToken": "sadsadas",
+    "nugetServer": "localhost",
+    "versioner": "gitlab"
+}

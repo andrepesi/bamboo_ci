@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ACF6346D-F169-4002-83A3-CF6EC95E5890}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BambooCI", "src\BambooCI\BambooCI.csproj", "{7D16B8A1-4511-4756-940D-CE5366413189}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{23C59DC4-969B-478E-A358-199D1DA6CDA7}"
+	ProjectSection(SolutionItems) = preProject
+		.buildconfig.json = .buildconfig.json
+		.gitlab-ci.yml = .gitlab-ci.yml
+		buildinfo.json = buildinfo.json
+		gulpfile.js = gulpfile.js
+		package.json = package.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D16B8A1-4511-4756-940D-CE5366413189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D16B8A1-4511-4756-940D-CE5366413189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D16B8A1-4511-4756-940D-CE5366413189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D16B8A1-4511-4756-940D-CE5366413189}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D16B8A1-4511-4756-940D-CE5366413189} = {ACF6346D-F169-4002-83A3-CF6EC95E5890}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FE3B357-57F1-4B2D-A379-BF3CBE7E8F12}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,24 @@
+{
+  "name": "bamboo_ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrepesi/bamboo_ci.git"
+  },
+  "author": "Andre Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrepesi/bamboo_ci/issues"
+  },
+  "homepage": "https://github.com/andrepesi/bamboo_ci#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pipe": "^1.0.4",
+    "nuance-gulp-build": "^0.1.0"
+  }
+}

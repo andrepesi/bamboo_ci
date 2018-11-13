@@ -1,0 +1,145 @@
+stages:
+  - build
+  - pack
+  - deploy
+
+.create_package: &create_package
+  stage: pack
+  script:
+    - gulp pack
+  variables:
+    AUTO_VERSION: "$CI_JOB_ID"
+    REFNAME : "$CI_COMMIT_REF_NAME"
+    CREATE_NUPKG : "true"
+    build_env: "gitlab"
+  cache:
+    key: $CI_ENVIRONMENT_SLUG
+    paths:
+      - node_modules
+  artifacts:
+    paths:
+      - src/**/*.nupkg
+      - "VERSION.txt"      
+
+pack_development:
+  <<: *create_package
+  environment:
+    name: development
+  variables:
+    AUTO_VERSION: "$CI_JOB_ID"
+    REFNAME : "$CI_COMMIT_REF_NAME"
+    CREATE_NUPKG : "true"
+    build_env: "gitlab"  
+    BUILD_CONFIGURATION: "Debug"
+  only: 
+    - /^(staging|beta|alpha|build|release|bugfix)[0-9]*-[0-9]\.[0-9]\.[0-9]*$/
+
+pack_production:
+  <<: *create_package
+  environment:
+    name: production
+  variables:
+    AUTO_VERSION: "$CI_JOB_ID"
+    REFNAME : "$CI_COMMIT_REF_NAME"
+    CREATE_NUPKG : "true"
+    build_env: "gitlab"  
+    BUILD_CONFIGURATION: "Release"
+  only: 
+    - tags
+
+.push: &pusher
+  stage: deploy
+  script:
+    - gulp push
+  variables:
+    AUTO_VERSION: "$CI_JOB_ID"
+    REFNAME : "$CI_COMMIT_REF_NAME"
+    CREATE_NUPKG : "true"
+    PUSH_PACKAGE: "true"
+    build_env: "gitlab"
+    NUGET_API_TOKEN : "9574bffa-b554-431d-a8a7-7a8c094484c1"
+    NUGET_SERVER : "http://10.0.8.181:8080/api/odata"
+  cache:
+    key: $CI_ENVIRONMENT_SLUG
+    paths:
+      - node_modules
+  artifacts:
+    paths:
+      - "VERSION.txt"
+
+push_production: 
+  <<: *pusher
+  stage: deploy
+  environment: production
+  only: 
+    - tags
+  when: manual  
+
+push_development: 
+  <<: *pusher
+  stage: deploy
+  environment: development
+  only: 
+    - /^(staging|beta|alpha|build|release|bugfix)[0-9]*-[0-9]\.[0-9]\.[0-9]*$/
+
+.build: &builder
+  stage: build
+  before_script:
+    - rm -rf *.nupkg
+    - npm install gulp
+    - npm install
+  script:
+    - gulp bump
+    - gulp build
+    - gulp version    
+  variables:
+    AUTO_VERSION: "$CI_JOB_ID"
+    REFNAME : "$CI_COMMIT_REF_NAME"
+    BUILD_CONFIGURATION: "Debug"
+    INCLUDE_META_IN_VERSION: "true"
+    META_STRATEGY : "first_part"
+    build_env: "gitlab"
+  environment:
+    name: $CI_ENVIRONMENT_SLUG
+  cache:
+    key: $CI_ENVIRONMENT_SLUG
+    untracked: true
+    paths:
+      - node_modules
+  artifacts:
+    paths:
+      - src/*.csproj
+      - "VERSION.txt"
+     
+
+build_development:
+  <<: *builder
+  stage: build
+  variables:
+    AUTO_VERSION: "$CI_JOB_ID"
+    REFNAME : "$CI_COMMIT_REF_NAME"
+    BUILD_CONFIGURATION: "Debug"
+    INCLUDE_META_IN_VERSION: "true"
+    META_STRATEGY : "first_part"
+    CREATE_NUPKG : "true"
+    PUSH_PACKAGE: "true"
+    build_env: "gitlab"
+  environment: 
+    name: development
+  except: 
+    - tags
+    
+build_production: 
+  <<: *builder
+  variables:
+    AUTO_VERSION: ""
+    REFNAME : "$CI_COMMIT_TAG"
+    BUILD_CONFIGURATION: "Release"
+    INCLUDE_META_IN_VERSION: "false"
+    META_STRATEGY : "first_part"
+    build_env: "gitlab"
+  environment: 
+    name: production
+    action: stop
+  only: 
+    - tags

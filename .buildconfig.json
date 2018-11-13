@@ -1,0 +1,27 @@
+{
+  "build_env": "gitlab",
+  "buildProjects": {
+    "Directory.Build.props": {
+      "options": [ "bump" ],
+      "build_mode": "dotnet",
+      "pack_mode": "dotnet",
+      "pack_options": {
+        "output": "packages"
+      },
+      "bump_type": "csproj17",
+      "publisher": "nuget",
+      "source_path": "./Directory.Build.props"
+    },
+    "BambooCI": {
+      "options": [ "build", "pack", "push" ],
+      "build_mode": "dotnet",
+      "pack_mode": "dotnet",
+      "pack_options": {
+        "output": "packages"
+      },
+      "bump_type": "csproj17",
+      "publisher": "nuget",
+      "source_path": "src/BambooCI/BambooCI.csproj"
+    }
+  }
+}
