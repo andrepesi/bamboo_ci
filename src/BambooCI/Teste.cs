@@ -8,7 +8,7 @@ namespace BambooCI
         {
             Console.Write("Deploy 1");
             Console.Write("Deploy 11");
-
+            Console.Write("Deploy 12");
         }
     }
 }
