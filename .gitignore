@@ -8,3 +8,5 @@
 /src/BambooCI/obj
 /.vs
 /src/BambooCI/packages
+/src/BambooCI/bin/Debug/netstandard2.0
+/src/BambooCI/bin/Debug
