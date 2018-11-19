@@ -1,9 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-	<AssemblyVersion>$(VersionNumber)</AssemblyVersion>
+	<AssemblyVersion>0.0.0.36</AssemblyVersion>
 	<FileVersion>$(VersionNumber)</FileVersion>
   </PropertyGroup>
-
+  <PropertyGroup>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <!--<GenerateAssemblyConfigurationAttribute>true</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>true</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>true</GenerateAssemblyProductAttribute>-->
+  </PropertyGroup>
 </Project>
