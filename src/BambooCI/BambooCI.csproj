@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-<Group>
+  <!--<PropertyGroup>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <GenerateAssemblyConfigurationAttribute>true</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>true</GenerateAssemblyCompanyAttribute>
