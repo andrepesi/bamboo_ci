@@ -11,4 +11,10 @@
     <GenerateAssemblyCompanyAttribute>true</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>true</GenerateAssemblyProductAttribute>-->
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="GitVersionTask" Version="4.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 </Project>
