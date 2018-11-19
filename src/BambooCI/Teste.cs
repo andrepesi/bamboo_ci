@@ -13,6 +13,17 @@ namespace BambooCI
             Console.Write("Deploy 11");
             Console.Write("Deploy 11");
 
+            Console.Write("Deploy 12");
+            Console.Write("Deploy 13");
+
+            Console.Write("Deploy 11");
+            Console.Write("Deploy 11");
+            Console.Write("Deploy 11");
+            Console.Write("Deploy 11");
+            Console.Write("Deploy 11 andre");
+            Console.Write("Deploy 40 andre");
+
+
         }
     }
 }
