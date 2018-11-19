@@ -2,15 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-	<AssemblyVersion>0.0.0.36</AssemblyVersion>
-	<FileVersion>$(VersionNumber)</FileVersion>
   </PropertyGroup>
-  <PropertyGroup>
+  <!--<PropertyGroup>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-    <!--<GenerateAssemblyConfigurationAttribute>true</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyConfigurationAttribute>true</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>true</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>true</GenerateAssemblyProductAttribute>-->
-  </PropertyGroup>
+    <GenerateAssemblyProductAttribute>true</GenerateAssemblyProductAttribute>
+  </PropertyGroup>-->
   <ItemGroup>
     <PackageReference Include="GitVersionTask" Version="4.0.0">
       <PrivateAssets>all</PrivateAssets>
