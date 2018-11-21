@@ -24,6 +24,7 @@ namespace BambooCI
             Console.Write("Deploy 40 andre");
             Console.Write("Deploy 44 andre");
             Console.Write("Deploy 45 andre");
+            Console.Write("Deploy 1.1.1 andre");
 
 
         }
