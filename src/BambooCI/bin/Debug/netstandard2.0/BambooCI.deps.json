@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "BambooCI/1.1.0-v1-0-44.1+40": {
+      "BambooCI/1.1.0+1": {
         "dependencies": {
           "GitVersionTask": "4.0.0",
           "NETStandard.Library": "2.0.3"
@@ -469,7 +469,7 @@
     }
   },
   "libraries": {
-    "BambooCI/1.1.0-v1-0-44.1+40": {
+    "BambooCI/1.1.0+1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -484,28 +484,28 @@
     "GitVersionTask/4.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AxoomieZ7M91y6izvMD6LHBhTv+BHTafu6aH6rAbx8L2u4nnh8P9PqLKCLxWuSJzVFFFBmWHVmwrjC/4M1FTVg==",
+      "sha512": "sha512-LaIPLzGoeJRQByhv8Xfv7gR6LKS1x87TY2g8e/JWUBcW59xLacyuDkGRpZCyobYXF6RVQDI5o8WZ5M1IddgZLA==",
       "path": "gitversiontask/4.0.0",
       "hashPath": "gitversiontask.4.0.0.nupkg.sha512"
     },
     "JetBrains.Annotations/10.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kjUPEwlfJSKglzubShOIZ3yhap+9vGz3QTl8isE9+CNkCefW9De8pv8fwV6U7N+HMsJBx9f/R5pnuxKlT2FQOA==",
+      "sha512": "sha512-BHOL9R1ueuzAJTHvWpczsxCFoKBzv2ya3zC7mvj4Rp1HkFNSMZOPTNSYSwwTmva/Lv3DHmqOTZ50IBOQh8Lg1g==",
       "path": "jetbrains.annotations/10.4.0",
       "hashPath": "jetbrains.annotations.10.4.0.nupkg.sha512"
     },
     "LibGit2Sharp/0.25.0-preview-0033": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4xl7ptw0iBYF/O8op0chRIGZOvbuGKBUUCjKgnkvA5tGCmNyzQfgSTNeKo+xd9PnJhIzd/arhobD39OmxyYBzA==",
+      "sha512": "sha512-ZDh4oj9OQU+7bIgpbZy2+vbAIRBt5f8bGfBSYKRtcZoSSRiBXxVUyHoy+HTpCMylWRRCQVwxCsO4acYNUrE90A==",
       "path": "libgit2sharp/0.25.0-preview-0033",
       "hashPath": "libgit2sharp.0.25.0-preview-0033.nupkg.sha512"
     },
     "LibGit2Sharp.NativeBinaries/1.0.185": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6Kjvu50FRXR/5a/qhX0okkmHep894jaA2+aOR2ngq5Gl/jAXpwE2kodOWOfomQ5ggxGT8vrRMGDBEYMT4oJvvA==",
+      "sha512": "sha512-oTfbwzSAS3KuTlf4ZqjuKSKv8B0dAmf3WaXtgn+5lg1+CNkYKUefibY6KPpzlg62ymDMU10AJtoIvF7x7nZLhw==",
       "path": "libgit2sharp.nativebinaries/1.0.185",
       "hashPath": "libgit2sharp.nativebinaries.1.0.185.nupkg.sha512"
     },
@@ -729,7 +729,7 @@
     "System.Security.SecureString/4.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7TGOnj9Lr8ljCJbMHjZC34hEw3Z+zRPp7eNhLBg22mbSqO8gQMGLJ/vQkWv8HFYG0t2i53ZulKZ8NNho+jVK7Q==",
+      "sha512": "sha512-sqzq9GD6/b0yqPuMpgIKBuoLf4VKAj8oAfh4kXSzPaN6eoKY3hRi9C5L27uip25qlU+BGPfb0xh2Rmbwc4jFVA==",
       "path": "system.security.securestring/4.0.0",
       "hashPath": "system.security.securestring.4.0.0.nupkg.sha512"
     },
@@ -757,14 +757,14 @@
     "UtilPack.NuGet.MSBuild/2.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WrfbqRLgsOR6KUs0mRMfPnYw/Vz/k8KQbTkftPCfnSXZ8yKzLeqynrOP3fH1e3GYxg3ixVFGVgSVa7WEixJy2w==",
+      "sha512": "sha512-i1tEnma/gHLjIRshHhj4Bp+s4+JfqXNymud5EcJbOVlxZEXnKdQxlV/7l708BNIaCvZEhLEQqzcz3xeCUY5esA==",
       "path": "utilpack.nuget.msbuild/2.7.0",
       "hashPath": "utilpack.nuget.msbuild.2.7.0.nupkg.sha512"
     },
     "YamlDotNet/4.2.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tDPH1rv3feRz8kVX3qrcWngtoSDvaZI1s3H+ULXd7dYwktkKpBC4Yo5qNLlc1nxUTp1IrJBensLQkXkVy9XYCg==",
+      "sha512": "sha512-ZAGjxozwteyECBckC3m6qJrIXGoYCttlinvsi7c3GgM1rgM/YeR+pNy8Blz7SHk2/vjzzpJdw3seso/MUqpVSA==",
       "path": "yamldotnet/4.2.3",
       "hashPath": "yamldotnet.4.2.3.nupkg.sha512"
     }
