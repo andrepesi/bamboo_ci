@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution 
 		package.json = package.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BambooCI4", "BambooCI4\BambooCI4.csproj", "{D26B0AB4-B5BC-4D2D-AF0F-24F2CEB5C7F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,12 +30,17 @@ Global
 		{7D16B8A1-4511-4756-940D-CE5366413189}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D16B8A1-4511-4756-940D-CE5366413189}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D16B8A1-4511-4756-940D-CE5366413189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D26B0AB4-B5BC-4D2D-AF0F-24F2CEB5C7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D26B0AB4-B5BC-4D2D-AF0F-24F2CEB5C7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D26B0AB4-B5BC-4D2D-AF0F-24F2CEB5C7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D26B0AB4-B5BC-4D2D-AF0F-24F2CEB5C7F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7D16B8A1-4511-4756-940D-CE5366413189} = {ACF6346D-F169-4002-83A3-CF6EC95E5890}
+		{D26B0AB4-B5BC-4D2D-AF0F-24F2CEB5C7F5} = {ACF6346D-F169-4002-83A3-CF6EC95E5890}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1FE3B357-57F1-4B2D-A379-BF3CBE7E8F12}
