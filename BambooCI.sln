@@ -18,7 +18,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution 
 		package.json = package.json
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BambooCIConsoleApp", "BambooCIConsoleApp\BambooCIConsoleApp.csproj", "{78933DD3-E32D-44DF-AC76-045281CCE1B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BambooCIConsoleApp", "src\BambooCIConsoleApp\BambooCIConsoleApp.csproj", "{78933DD3-E32D-44DF-AC76-045281CCE1B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BambooCIDotnetCore", "src\BambooCIDotnetCore\BambooCIDotnetCore.csproj", "{BDE05404-C006-4472-B0B1-C5BF4FCC2F3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +36,10 @@ Global
 		{78933DD3-E32D-44DF-AC76-045281CCE1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78933DD3-E32D-44DF-AC76-045281CCE1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78933DD3-E32D-44DF-AC76-045281CCE1B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDE05404-C006-4472-B0B1-C5BF4FCC2F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE05404-C006-4472-B0B1-C5BF4FCC2F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE05404-C006-4472-B0B1-C5BF4FCC2F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE05404-C006-4472-B0B1-C5BF4FCC2F3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{7D16B8A1-4511-4756-940D-CE5366413189} = {ACF6346D-F169-4002-83A3-CF6EC95E5890}
 		{78933DD3-E32D-44DF-AC76-045281CCE1B4} = {ACF6346D-F169-4002-83A3-CF6EC95E5890}
+		{BDE05404-C006-4472-B0B1-C5BF4FCC2F3B} = {ACF6346D-F169-4002-83A3-CF6EC95E5890}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1FE3B357-57F1-4B2D-A379-BF3CBE7E8F12}
