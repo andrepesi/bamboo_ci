@@ -14,6 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Nuance Communications")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Nuance Communications ©")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("teste de CI")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BambooCIDotnetCore")]

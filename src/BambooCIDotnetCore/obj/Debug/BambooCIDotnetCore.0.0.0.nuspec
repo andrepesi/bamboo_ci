@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BambooCIDotnetCore</id>
+    <version>0.0.0</version>
+    <title>BambooCIDotnetCore</title>
+    <authors>Nuance Communications</authors>
+    <owners>Nuance Communications</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>teste de CI</description>
+    <copyright>Nuance Communications ©</copyright>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.1">
+        <dependency id="Microsoft.NETCore.App" version="2.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\andre_silva\Documents\Personal\Projects\dotNet\bamboo_ci\src\BambooCIDotnetCore\bin\Debug\netcoreapp2.1\BambooCIDotnetCore.runtimeconfig.json" target="lib\netcoreapp2.1\BambooCIDotnetCore.runtimeconfig.json" />
+    <file src="C:\Users\andre_silva\Documents\Personal\Projects\dotNet\bamboo_ci\src\BambooCIDotnetCore\bin\Debug\netcoreapp2.1\BambooCIDotnetCore.dll" target="lib\netcoreapp2.1\BambooCIDotnetCore.dll" />
+  </files>
+</package>

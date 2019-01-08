@@ -5,5 +5,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <Authors>Nuance Communications</Authors>
     <Title>BambooCIDotnetCore</Title>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>teste de CI</Description>
   </PropertyGroup>
 </Project>
